@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PPDB SMK Muhammadiyah Pringsewu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <section id="landing" class="card active">
+      <h1>Putri Nabila</h1>
+      <p>Selamat datang di PPDB SMK Muhammadiyah Pringsewu.</p>
+      <button id="startButton" class="button">Klik Saya</button>
+    </section>
+
+    <section id="ppdb" class="card">
+      <h2>PPDB SMK Muhammadiyah Pringsewu</h2>
+      <p>Silakan lanjutkan untuk mengisi formulir pendaftaran.</p>
+      <button id="registerButton" class="button">Daftar Sekarang</button>
+    </section>
+
+    <section id="formSection" class="card">
+      <h2>Formulir Pendaftaran</h2>
+      <form id="registrationForm">
+        <label for="fullName">Nama Lengkap</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Masukkan nama lengkap" required />
+
+        <label for="birthDate">Tanggal Lahir</label>
+        <input type="date" id="birthDate" name="birthDate" required />
+
+        <label for="address">Alamat</label>
+        <textarea id="address" name="address" rows="3" placeholder="Masukkan alamat" required></textarea>
+
+        <label for="gender">Jenis Kelamin</label>
+        <select id="gender" name="gender" required>
+          <option value="" disabled selected>Pilih jenis kelamin</option>
+          <option value="perempuan">Perempuan</option>
+          <option value="laki-laki">Laki-laki</option>
+        </select>
+
+        <label for="school">Asal Sekolah</label>
+        <input type="text" id="school" name="school" placeholder="Masukkan asal sekolah" required />
+
+        <label for="phone">Nomor Telepon</label>
+        <input type="tel" id="phone" name="phone" placeholder="08xxxxxxxxxx" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="nama@contoh.com" required />
+
+        <label for="note">Catatan Tambahan</label>
+        <textarea id="note" name="note" rows="3" placeholder="Tulis informasi tambahan jika perlu"></textarea>
+
+        <button type="submit" class="button submit">Kirim Pendaftaran</button>
+      </form>
+      <p class="info">Isi data di atas kemudian klik tombol kirim.</p>
+    </section>
+
+    <section id="success" class="card">
+      <h2>Terima Kasih!</h2>
+      <p>Data pendaftaran Anda telah disimpan.</p>
+      <button id="resetButton" class="button">Kembali Ke Awal</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
